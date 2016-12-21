@@ -190,11 +190,9 @@ void OnPowerSavingDeactivated()
 {
 }
 
-PVR_ERROR GetAddonCapabilities(PVR_ADDON_CAPABILITIES *pCapabilities)
+void GetCapabilities(PVR_ADDON_CAPABILITIES *pCapabilities)
 {
   pCapabilities->bSupportsTV                 = true;
-
-  return PVR_ERROR_NO_ERROR;
 }
 
 PVR_ERROR GetStreamProperties(PVR_STREAM_PROPERTIES* props)
